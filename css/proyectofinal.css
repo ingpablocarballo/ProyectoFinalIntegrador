@@ -27,10 +27,17 @@ body{
     margin-right: auto;
 }
 
+
 .header .logo img{
     height: 70px;
     width: auto;    
     transition: all 0.3s;
+}
+
+.fotocv img{
+    height: 70px;
+    width: auto;    
+   
 }
 
 .header .logo img:hover{
