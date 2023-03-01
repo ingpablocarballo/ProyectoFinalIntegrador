@@ -5,16 +5,18 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
-
-
 }
 
 body{
-    background-color: #fff59d;
+    background-color: white;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+   
 }
 
 .header{
-    background-color: white;
+    background-color: rgb(179, 197, 255);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -25,6 +27,7 @@ body{
 .header .logo{
     cursor: pointer;
     margin-right: auto;
+    mix-blend-mode: multiply;  /*para hacer transparente el fondo*/
 }
 
 
@@ -34,11 +37,6 @@ body{
     transition: all 0.3s;
 }
 
-.fotocv img{
-    height: 70px;
-    width: auto;    
-   
-}
 
 .header .logo img:hover{
     transform: scale(1.1);
@@ -47,7 +45,7 @@ body{
 .header .nav-links{
     list-style: none;
 }
-
+/*  */
 .header .nav-links li{
     display: inline-block;
     padding: 0 20px;
@@ -65,7 +63,7 @@ body{
 }
 
 .header .nav-links li a:hover{
-    color: rgb(114, 114, 8);
+    color: rgb(255, 255, 255);
 }
 
 .menu{
@@ -90,18 +88,11 @@ body{
 .header .btn button:hover,
 .header .menu button:hover{
     background-color: aliceblue;
-    color: rgb(114, 114, 8);
+    color:rgb(179, 197, 255);
     transform: scale(1.1);
 }
 
-@media screen and (max-width:800px){
-    .nav-links, .btn{
-        display: none;
-    }
-    .menu{
-        display: inherit;
-    }
-}
+
 
 /*NAV*/
 .header a{
@@ -140,7 +131,7 @@ body{
 
 .header .overlay a:hover,
 .header .overlay a:focus{
-    color: rgb(114, 114, 8);
+    color: rgb(255, 255, 255);
 }
 
 .header .overlay .close{
@@ -151,14 +142,237 @@ body{
 
 }
 
+main{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    width: 80%;
+}
+
+.qr{
+    width: 20%;
+}
+
+a{
+    text-decoration: inherit;
+    
+    color: rgb(69, 69, 236);
+    cursor: auto;
+}
+
+section {
+    display: flex;
+    align-items:center;
+    /*justify-content: space-between;*/
+    margin-bottom: 30px;
+    height: auto;
+    width: 50%;
+    /*border: 1px solid black;*/
+}
+
+h1{
+    
+    font-size: 35px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+div.fotocv{
+}
+
+.fotocv img{
+    margin-left: 50px;
+    height: 170px;
+    width: auto; 
+}
+
+/*.section-personal-info {
+    display: flex;
+    align-items:center;
+    justify-content: space-between; 
+}*/
+
+ul.education li strong {
+    display: inline-block;
+    min-width: 120px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    list-style-position: inside;
+}
+
+ul.skills li {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.img-proyectos{
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+
+/*MODO OSCURO*/
+.dark-mode {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+.switch {
+    margin-left: 30px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: white;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: black;
+  }
+/*FIN MODO OSCURO*/
+
+  
+
+
+
+
+.footer {
+    font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+  }
+
+
+/*WHATSAPP*/
+.whatsapp-button { 
+    display: block;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-image: url("/img/whatsapp-logo.svg");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+/*FIN WHATSAPP*/
+
+
+@media screen and (max-width:800px){
+    .nav-links, .btn{
+        display: none;
+    }
+    .menu{
+        display: inherit;
+    }
+
+    .section-personal-info {
+        flex-direction: column-reverse; 
+    }
+
+    #dark-mode-toggle-label{
+        display: none;
+    }
+    
+    section{
+        width: 90%;
+    }
+    .qr{
+        width: 70%;
+    }
+
+    .fotocv img{
+        height: 250px;
+        margin-left: 0px;
+        width: auto;      
+    }
+}
+
+
 @media screen and (max-height:450px){
     .header .overlay a{
         font-size: 20px;
-    }
+    }   
     
     .header .overlay .close{
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
+
+    
+
+
 }

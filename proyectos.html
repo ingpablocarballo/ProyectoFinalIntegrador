@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Pablo Carballo</title>
+    <link rel="stylesheet" type="text/css" href="css/proyectofinal.css">
+</head>
+<body>
+    <header class="header">
+        
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo" srcset=""></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Perfil</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+            </ul>
+            
+        </nav>        
+        <a href="contacto.html" class="btn"><button>Contacto</button></a>
+
+        <label class="switch" id="dark-mode-toggle-label">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+
+        <a  id="menu" href="#" class="menu"><button><i class="fa-solid fa-bars"></i></button></a>
+           
+
+        <div class="overlay" id="mobile-menu">
+            <a href="" id="close" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Perfil</a>
+                <a href="proyectos.html">Proyectos</a>
+                <a href="educacion.html">Educación</a>
+                <a href="contacto.html">Contacto</a>
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle-menu">
+                    <span class="slider round"></span>
+                </label> 
+            </div>
+               
+        </div>
+
+
+
+    </header>
+
+    <main>        
+        <h1>Proyectos</h1>
+
+        <h2>Sistema de control de mesas de pool</h2>
+        <p>Permite gestionar el tiempo de las mesas de pool, al finalizar el tiempo 
+            ingresado automaticamente se apagan las luces de la mesa y se bloquean las bolas.<br>
+            La aplicación desktop se comunica a traves de wifi con las mesas que les integré un esp8266 para controlar las bolas con un microservo, un rele para controlar las luces y una pantalla para indicar el tiempo restante de juego en la mesa.<br>
+            Este sistema lo desarrollé en Java(parte desktop) y en Arduino(parte IoT)
+        </p>        
+        <img class="img-proyectos" src="/img/proyectos/pool1.jpg" alt="">
+        <img class="img-proyectos" src="/img/proyectos/pool2.jpg" alt="">
+        <img class="img-proyectos" src="/img/proyectos/pool3.jpg" alt="">
+
+        <h2>Sistema para gimnasio con control de acceso</h2>
+        <p>Permite la gestion de los socios de un gimnasio. Registrando los socios, pagos e ingresos, y controlando el acceso con la cuota al día.<br>
+            Este sistema lo desarrollé en Java(parte desktop) y en Arduino(parte IoT). El dispositivo esp8266 lee los llaveros de los socios y controla el molinete
+        </p>
+        <img class="img-proyectos" src="/img/proyectos/gym1.jpg" alt="">
+        <img class="img-proyectos" src="/img/proyectos/gym2.jpg" alt="">
+        <img class="img-proyectos" src="/img/proyectos/gym3.jpg" alt="">
+
+        <h2>Sistema de Gestión de Clientes y Recargas de matafuegos</h2>
+        <p>Permite la gestion de las recargas pudiendo imprimir los datos de la recarga sobre la oblea. Ademas cuenta con mas funcionalidades explicadas en el siguiente pdf. <a href="/img/proyectos/sistema-matafuegos.pdf" download>Descargar pdf</a> <br>
+            Este sistema lo desarrollé en Java
+        </p>
+        <img class="img-proyectos" src="/img/proyectos/matafuegos1.jpg" alt="">
+
+
+
+
+        <a href="whatsapp://send?phone=+5491122489258&text=Consulta%20via%20curriculum" class="whatsapp-button"></a>
+    </main>
+    
+
+ <!-- <button id="dark-mode-toggle">Toggle Dark Mode</button> -->
+    
+
+    
+
+
+    <script src="js/proyectofinal.js"></script>
+    <script src="https://kit.fontawesome.com/ef3b63c30a.js" crossorigin="anonymous"></script>
+
+    
+</body>
+
+<footer>
+    <div class="footer">
+    <p>&copy; 2023 Pablo Carballo.</p>
+    </div>
+</footer>
+</html>
