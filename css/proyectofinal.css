@@ -42,7 +42,7 @@ body{
     transform: scale(1.1);
 }
 
-.header .nav-links{
+.header .nav-links{    
     list-style: none;
 }
 /*  */
@@ -187,8 +187,8 @@ h2{
     font-size: 25px;
 }
 
-div.fotocv{
-}
+/*div.fotocv{
+}*/
 
 .fotocv img{
     margin-left: 50px;
@@ -291,12 +291,13 @@ ul.skills li {
   }
 /*FIN MODO OSCURO*/
 
-  
+/*footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}*/
 
-
-
-
-.footer {
+.footer {    
     font-size: 10px;
     position: fixed;
     left: 0;
@@ -357,6 +358,11 @@ ul.skills li {
         height: 250px;
         margin-left: 0px;
         width: auto;      
+    }
+
+    .img-proyectos{
+        width: 90%;
+        padding-bottom: 20px;
     }
 }
 
